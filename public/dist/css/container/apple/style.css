@@ -1,0 +1,276 @@
+.section, .header, .ad__block--section, .product, .footer {
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.section__content, .header__container, .ad__block {
+  max-width: 1200px;
+  width: 100%;
+}
+@media all and (width < 1440px) {
+  .section__content, .header__container, .ad__block {
+    max-width: 1100px;
+  }
+}
+@media all and (width < 1260px) {
+  .section__content, .header__container, .ad__block {
+    max-width: 900px;
+  }
+}
+@media all and (width < 1000px) {
+  .section__content, .header__container, .ad__block {
+    max-width: 700px;
+  }
+}
+@media all and (width < 620px) {
+  .section__content, .header__container, .ad__block {
+    max-width: 500px;
+  }
+}
+
+.section__double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media all and (width < 1260px) {
+  .section__double {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(6 1fr);
+  grid-column: minmax;
+}
+@media all and (width < 1260px) {
+  .footer__content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #F5F5F7;
+}
+
+.header {
+  background-color: #424245;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.header__block {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #DADADA;
+  font-size: 12px;
+  transition: opacity 0.7s;
+  cursor: pointer;
+}
+.header__link:hover {
+  opacity: 0.7;
+}
+.header__link:active {
+  opacity: 0.3;
+}
+
+.header__icon {
+  transition: opacity 0.7s;
+  cursor: pointer;
+}
+.header__icon:hover {
+  opacity: 0.7;
+}
+.header__icon:active {
+  opacity: 0.3;
+}
+
+.ad__block {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  background-color: #F5F5F7;
+  gap: 32px;
+  align-items: center;
+}
+
+.ad__link {
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity 0.7s;
+  cursor: pointer;
+}
+.ad__link:hover {
+  opacity: 0.7;
+}
+.ad__link:active {
+  opacity: 0.3;
+}
+
+.product {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.product__content {
+  display: grid;
+  gap: 20px;
+  align-content: center;
+  text-align: center;
+}
+
+.product__title {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.product__description {
+  font-size: 28px;
+}
+
+.product__action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: opacity 0.7s;
+  cursor: pointer;
+}
+.product__action:hover {
+  opacity: 0.7;
+}
+.product__action:active {
+  opacity: 0.3;
+}
+
+.product__link {
+  color: #0066CC;
+  font-size: 20px;
+}
+.product__link::after {
+  content: ">";
+  margin-left: 8px;
+}
+
+.product--big {
+  max-height: 700px;
+  height: 100vh;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media all and (width < 1000px) {
+  .product--big {
+    background-size: 150%;
+    max-height: 500px;
+  }
+}
+
+.product--small {
+  max-height: 580px;
+  height: 100vh;
+  background-size: cover;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media all and (width < 1000px) {
+  .product--small {
+    background-size: 150%;
+    max-height: 500px;
+  }
+}
+
+.product--dark {
+  color: #F5F5F7;
+  background-color: black;
+}
+
+.product--light {
+  color: #1D1D1F;
+  background-color: #F5F5F7;
+}
+
+.product--top .product__content {
+  align-content: flex-start;
+}
+
+.product--bottom .product__content {
+  align-content: flex-end;
+}
+
+.product--iphone-pro {
+  background-image: url(/img/iphone-pro.png);
+  background-color: #1D1D1F;
+}
+
+.product--iphone {
+  background-image: url(/img/iphone.png);
+  background-color: #fafafa;
+}
+
+.product--iwatch {
+  background-image: url(/img/iwatch.png);
+  background-color: #1D1D1F;
+}
+
+.product--trade_in {
+  background-image: url(/img/trade-in.png);
+  background-color: #fafafa;
+}
+
+.product--conference {
+  background-image: url(/img/conference.png);
+  background-color: #1D1D1F;
+}
+
+.product--ipad {
+  background-image: url(/img/ipad.png);
+  background-color: #fafafa;
+}
+
+.product--small-business {
+  background-image: url(/img/smallbis.png);
+  background-color: #1D1D1F;
+}
+
+.product--gift {
+  background-image: url(/img/gift.png);
+  background-color: #fafafa;
+}
+
+.product--card {
+  background-image: url(/img/card.png);
+  background-color: #fafafa;
+}
+
+.footer {
+  padding: 40px;
+  gap: 20px;
+}
+
+.footer__content {
+  gap: 8px;
+}
+.footer__content .footer__title {
+  font-weight: 600;
+  font-size: 12px;
+  color: #1D1D1F;
+}
+.footer__content .footer__link {
+  font-size: 12px;
+  color: #1D1D1F;
+}
+
+/*# sourceMappingURL=style.css.map */
