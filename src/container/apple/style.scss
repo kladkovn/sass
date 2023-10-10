@@ -141,17 +141,26 @@ $productImage: (
     }
 }
 .footer{
-    @extend .section;
-    padding: s.space(10);
-    gap: s.space(5);
-    
+    display: flex;
+    justify-content: center;
+    padding: 0 s.space(40);
+    align-content: center;
+    align-items:baseline;
 }
 .footer__content{
-    gap: s.space(2);
+    max-width: 1200px;
+    width: 100%;
+    padding: s.space(4) 0;
+    gap: s.space(3);
+    display: grid;
+    grid-template-columns: auto;
+
+    
+   
    
     .footer__title{
         font-weight: 600;
-        font-size: s.size('small');
+        font-size: s.size('default');
         color: s.color('fontDark');
     }
     .footer__link{

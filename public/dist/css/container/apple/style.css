@@ -1,4 +1,4 @@
-.section, .header, .ad__block--section, .product, .footer {
+.section, .header, .ad__block--section, .product {
   display: flex;
   justify-content: center;
   padding: 0 16px;
@@ -36,17 +36,6 @@
 @media all and (width < 1260px) {
   .section__double {
     grid-template-columns: 1fr;
-  }
-}
-
-.footer__content {
-  display: grid;
-  grid-template-columns: repeat(6 1fr);
-  grid-column: minmax;
-}
-@media all and (width < 1260px) {
-  .footer__content {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -256,16 +245,24 @@ body {
 }
 
 .footer {
-  padding: 40px;
-  gap: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 0 160px;
+  align-content: center;
+  align-items: baseline;
 }
 
 .footer__content {
-  gap: 8px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 16px 0;
+  gap: 12px;
+  display: grid;
+  grid-template-columns: auto;
 }
 .footer__content .footer__title {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
   color: #1D1D1F;
 }
 .footer__content .footer__link {

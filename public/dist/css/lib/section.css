@@ -39,15 +39,4 @@
   }
 }
 
-.footer__content {
-  display: grid;
-  grid-template-columns: repeat(6 1fr);
-  grid-column: minmax;
-}
-@media all and (width < 1260px) {
-  .footer__content {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 /*# sourceMappingURL=section.css.map */

@@ -183,20 +183,20 @@
   {{/with}}
     </div>
   </div>
-  {{#with footer}}
-  
+ 
   <div class="footer">
-    {{#each this}}
+   {{#with footer}}
+   {{#each this}}
     <div class="footer__content">
       <span class="footer__title">{{title}}</span>
       {{#each links}}
       <a href="{{url}}" class="footer__link click">{{text}}</a>
       {{/each}}
     </div>
-     {{/each}}
+      {{/each}}
+      {{/with}}
   </div>
- 
-  {{/with}}
+  
 </div>
 
 {{! 
